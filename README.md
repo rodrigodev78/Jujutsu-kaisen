@@ -33,4 +33,5 @@ Este projeto foi criado para fins educativos e de portfólio.
 Contribuições são bem-vindas! Abra uma *issue* ou envie um *pull request*.
 
 ## *Demonstração*
-<img width="1918" height="867" alt="image" src="https://github.com/user-attachments/assets/5e5c215c-067a-44e4-911e-6ecdc774d3e7" />
+<img width="1919" height="867" alt="image" src="https://github.com/user-attachments/assets/d528a0cb-1241-4d57-bd82-7d23b21438f0" />
+

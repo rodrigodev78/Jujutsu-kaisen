@@ -1,4 +1,4 @@
-# *Jujutsu Kaisen Battle Simulator*
+# *Jujutsu Kaisen*
 
 Um jogo de luta inspirado em Jujutsu Kaisen, construído com *HTML, CSS e JavaScript puro*.  
 Permite que dois jogadores escolham personagens, batalhem e vejam animações de ataque em tempo real.

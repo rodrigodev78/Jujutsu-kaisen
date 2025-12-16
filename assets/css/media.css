@@ -1,0 +1,126 @@
+@media (min-width: 567px) and (max-width: 890px){
+    h1{
+        font-size: 50px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .name-bar{
+        font-size: 18px;
+    }
+
+    .vs{
+        width: 150px;
+    }
+
+    .character1 button, 
+    .character2 button{
+        width: 70px;
+        height: 70px;
+        border: 3px solid #FFF;
+    }
+
+    .character1 button.selected,
+    .character2 button.selected{
+        width: 70px;
+        height: 70px;
+    }
+
+    .char-big,
+    .char-big2{
+        width: 45%;
+    }
+
+    .char-big img, 
+    .char-big2 img{
+        height: 260px;
+    }
+
+    @keyframes fight1{
+        0%{transform: translate(0px);}
+        50%{transform: translate(470px);}
+        100%{transform: translate(0px);}
+    }
+
+    @keyframes fight2{
+        0%{transform: translate(0px);}
+        50%{transform: translate(-470px);}
+        100%{transform: translate(0px);}
+    }
+}
+
+@media (max-width: 620px){
+    h1{
+        font-size: 40px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .name-bar{
+        font-size: 16px;
+    }
+
+    .vs{
+        display: none;
+    }
+
+    .win img, .lose img{
+        width: 400px;
+        top: 50%;
+    }
+
+    .character1 button, 
+    .character2 button{
+        border: 2px solid #FFF;
+        width: 60px;
+        height: 60px;
+    }
+
+    .character1 button.selected,
+    .character2 button.selected{
+        width: 60px;
+        height: 60px;
+    }
+
+    .char-big,
+    .char-big2{
+        width: 45%;
+    }
+
+    .char-big img, 
+    .char-big2 img{
+        height: 240px;
+    }
+
+    .container-log{
+        top: -10px;
+        width: 180px;
+        height: 100px;
+    }
+
+    .restart-button{
+        bottom: -170px;
+    }
+    
+    @keyframes fight1{
+        0%{transform: translate(0px);}
+        50%{transform: translate(220px);}
+        100%{transform: translate(0px);}
+    }
+
+    @keyframes fight2{
+        0%{transform: translate(0px);}
+        50%{transform: translate(-220px);}
+        100%{transform: translate(0px);}
+    }
+}

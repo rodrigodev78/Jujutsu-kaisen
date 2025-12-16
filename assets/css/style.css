@@ -1,0 +1,233 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imgs/back.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 60px;
+    margin-bottom: 26px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px #000;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+
+.player1, 
+.player2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.vs{
+    width: 180px;
+}
+
+.vs img{
+    width: 100%;
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+.win img, .lose img{
+    display: none;
+    width: 480px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 9999;
+}
+
+.lifebar{
+    width: 90%;
+    height: 12px;
+    border: 2px solid #00F;
+    border-radius: 20px;
+    margin-bottom: 6px;
+    box-shadow: 5px 5px 10px #000;
+    background-color: rgba(0,0,0, 0.4);
+}
+
+.bar{
+    width: 0%;
+    height: inherit;
+    background-color: #FFF;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+
+.name-bar{
+    font-size: 20px;
+    color: #FFF;
+    margin: 6px;
+    text-align: center;
+    text-shadow: 5px 5px 10px #000;
+}
+
+.attack-button{
+    margin: 4px 0px;
+    border: 2px solid #00F;
+    font-size: 16px;
+    color: #00F;
+    border-radius: 20px;
+    padding: 5px 16px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.attack-button:hover{
+    background-color: #00F;
+    border: 2px solid #FFF;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.character1, 
+.character2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.character1 button, 
+.character2 button{
+    margin: 6px;
+    border-radius: 50%;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+    border: 4px solid #FFF;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.character1 button img, 
+.character2 button img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character1 button:hover, 
+.character2 button:hover{
+    border: 4px solid #00F;
+    transform: scale(1.25);
+    transition: 0.3s;
+}
+
+.character1 button.selected,
+.character2 button.selected{
+    border-radius: 50%;
+    padding: 0;
+    width: 90px;
+    height: 90px;
+    border: 4px solid #00F;
+    transform: scale(1.25);
+}
+
+.char-big,
+.char-big2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.char-big img, 
+.char-big2 img{
+    display: none;
+    height: 300px;
+    transform-origin: top center;
+    filter: drop-shadow(15px 5px 12px rgba(0,0,0,1));
+}
+
+@keyframes fight1{
+    0%{transform: translate(0px);}
+    50%{transform: translate(700px);}
+    100%{transform: translate(0px);}
+}
+
+.fight1{
+    animation: fight1 1s alternate ease-in-out;
+}
+
+@keyframes fight2{
+    0%{transform: translate(0px);}
+    50%{transform: translate(-700px);}
+    100%{transform: translate(0px);}
+}
+
+.fight2{
+    animation: fight2 1s alternate ease-in-out;
+}
+
+.start-button, .restart-button{
+    margin: 16px 0px;
+    border: 2px solid #00F;
+    font-size: 16px;
+    color: #00F;
+    border-radius: 20px;
+    padding: 8px 18px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.start-button:hover, .restart-button:hover{
+    background-color: #00F;
+    border: 2px solid #FFF;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.restart-button{
+    position: relative;
+    bottom: -120px;
+    display: none;
+}
+
+.container-log{
+    position: relative;
+    top: -120px;
+    color: #000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 140px;
+    margin: 10px;
+    border: 4px solid #00F;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+.log{
+    text-align: center;
+    font-size: 80px;
+}
+
+.log li{
+    margin: 8px;
+}
+
